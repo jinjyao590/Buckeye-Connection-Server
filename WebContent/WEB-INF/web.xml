@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>BCServer</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>RegisterServlet</servlet-name>
+    <servlet-class>com.bcserver.servlet.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.bcserver.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>PostMomentServlet</servlet-name>
+    <servlet-class>com.bcserver.servlet.PostMomentServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetMomentsServlet</servlet-name>
+    <servlet-class>com.bcserver.servlet.GetMomentsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetEventServlet</servlet-name>
+    <servlet-class>com.bcserver.servlet.GetEventServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GetFriendsServlet</servlet-name>
+    <servlet-class>com.bcserver.servlet.GetFriendsServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>JoinEventsServlet</servlet-name>
+  	<servlet-class>com.bcserver.servlet.JoinEventsServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>RegisterServlet</servlet-name>
+    <url-pattern>/servlet/register</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/servlet/login</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PostMomentServlet</servlet-name>
+    <url-pattern>/servlet/postMoment</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetMomentsServlet</servlet-name>
+    <url-pattern>/servlet/getMoments</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetEventServlet</servlet-name>
+    <url-pattern>/servlet/getEvents</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+<<<<<<< HEAD
+    <servlet-name>GetFriendsServlet</servlet-name>
+    <url-pattern>/servlet/getFriends</url-pattern>
+=======
+    <servlet-name>JoinEventsServlet</servlet-name>
+    <url-pattern>/servlet/joinEvents</url-pattern>
+>>>>>>> origin/master
+  </servlet-mapping>
+</web-app>
